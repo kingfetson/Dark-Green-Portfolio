@@ -321,3 +321,22 @@ function deleteFromHistory(type, id) {
 
 // Init
 document.addEventListener('DOMContentLoaded', () => { loadHistory('resume'); loadHistory('cv'); });
+
+// Enhanced: Mouse-following glow effect on home page
+const heroSection = document.querySelector('.hero-section');
+if (heroSection) {
+  heroSection.addEventListener('mousemove', (e) => {
+    const rect = heroSection.getBoundingClientRect();
+    const x = ((e.clientX - rect.left) / rect.width) * 100;
+    const y = ((e.clientY - rect.top) / rect.height) * 100;
+    
+    heroSection.style.background = `
+      radial-gradient(circle at ${x}% ${y}%, rgba(0, 255, 136, 0.12) 0%, transparent 50%),
+      radial-gradient(ellipse at 20% 50%, rgba(0, 255, 136, 0.08) 0%, transparent 60%),
+      radial-gradient(ellipse at 80% 50%, rgba(0, 255, 136, 0.05) 0%, transparent 50%),
+      var(--bg-primary)
+    `;
+  });
+}
+
+// Add this to your existing navigation code
