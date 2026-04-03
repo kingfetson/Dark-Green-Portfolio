@@ -32,33 +32,57 @@
   <!-- Pages Container -->
   <main class="main-content">
 
-    <!-- HOME -->
-    <section id="home" class="page active-page">
-      <div class="hero-section">
-        <div class="hero-image-wrapper">
-          <div class="image-glow"></div>
-          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Simon" class="hero-image">
+    <!-- Replace just the HOME section in your existing index.html -->
+<section id="home" class="page active-page">
+  <div class="hero-section">
+    <!-- Shining Background Elements -->
+    <div class="shine-bg">
+      <div class="shine-orb orb-1"></div>
+      <div class="shine-orb orb-2"></div>
+      <div class="shine-orb orb-3"></div>
+      <div class="grid-shine"></div>
+      <div class="shine-sweep"></div>
+    </div>
+
+    <!-- Hero Content -->
+    <div class="hero-inner">
+      <!-- Glowing Profile Image -->
+      <div class="hero-image-wrapper">
+        <div class="image-glow-layer"></div>
+        <div class="image-ring"></div>
+        <div class="image-ring ring-2"></div>
+        <div class="image-sparkles">
+          <span class="sparkle"></span>
+          <span class="sparkle"></span>
+          <span class="sparkle"></span>
+          <span class="sparkle"></span>
         </div>
-        <div class="hero-text">
-          <span class="greeting">Hey I'm <span class="green">Simon</span></span>
-          <h1 class="hero-title">I'm a <span class="green">Web Developer</span></h1>
-          <p class="hero-description">
-            Passionate web developer specializing in crafting clean, elegant, and efficient web solutions. 
-            With expertise in modern frameworks and a keen eye for design, I transform complex problems into 
-            simple, beautiful, and intuitive digital experiences.
-          </p>
-          <div class="social-links">
-            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-dribbble"></i></a>
-          </div>
-          <button class="btn btn-primary" onclick="navigateTo('resume')">
-            <i class="fas fa-file-alt"></i> View Resume
-          </button>
-        </div>
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Simon" class="hero-image">
+        <div class="image-shine"></div>
       </div>
-    </section>
+
+      <!-- Hero Text -->
+      <div class="hero-text">
+        <span class="greeting">Hey I'm <span class="green">Simon</span></span>
+        <h1 class="hero-title">I'm a <span class="green">Web Developer</span></h1>
+        <p class="hero-description">
+          Passionate web developer specializing in crafting clean, elegant, and efficient web solutions. 
+          With expertise in modern frameworks and a keen eye for design, I transform complex problems into 
+          simple, beautiful, and intuitive digital experiences.
+        </p>
+        <div class="social-links">
+          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-dribbble"></i></a>
+        </div>
+        <button class="btn btn-primary" onclick="navigateTo('resume')">
+          <i class="fas fa-file-alt"></i> View Resume
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- ABOUT -->
     <section id="about" class="page">
